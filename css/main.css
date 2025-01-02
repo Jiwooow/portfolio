@@ -503,6 +503,7 @@ h5 {
   padding-bottom: 80.89%; /* Aspect ratio of 16:9 */
   height: 0; /* Height is determined by padding */
   max-height: 1000px;
+  min-height: 500px;
   overflow: hidden;
   margin: 0 auto;
 }
