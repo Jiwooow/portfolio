@@ -250,12 +250,6 @@ h5 {
   padding: 0 1.5rem;
 }
 
-.hero2-img {
-  flex: 0 0 30%;
-  text-align: right !important;
-  padding: 0 1.5rem;
-}
-
 .hero-img img {
   max-width: 100%;
   height: auto;
@@ -306,15 +300,24 @@ h5 {
 
 .about-descr {
   justify-content: center;
+  max-width: 800px;
+  list-style-type: disc;
+  margin: 0 auto; /* Center the paragraph */
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
   color: var(--gray-text-color);
 }
 
+.about-descr li {
+  margin-bottom: 1rem; /* Add spacing between list items */
+  text-indent: -1.5rem; /* Negative indent to align text with bullets */
+}
+
 .about-content {
   flex: 60%;
   padding-right: 3rem;
+  max-width: 800px;
 }
 
 .about-skills {
@@ -444,11 +447,13 @@ h5 {
   width: 100%;
   transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
+
 .project-frame {
   width: 100%; /* Example width */
-  max-width: 600px; /* Optional: Limits the container width for larger screens */
+  max-width: 500px; /* Optional: Limits the container width for larger screens */
   height: auto; /* Height will adjust based on the aspect ratio */
   aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio for the container */
+  padding: 2rem 0;
   overflow: hidden;
 }
 
@@ -593,6 +598,7 @@ h5 {
 
 .footer-copyright {
   font-size: 1.6rem;
+  color: var(--gray-text-color);
 }
 
 /* "go to top" button */
@@ -707,4 +713,95 @@ h5 {
   80% {
     top: 0;
   }
+}
+
+
+/* Tools */
+/* General styling for the tools section */
+.tools-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.tool-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: --primary-bg-color;
+  border: 2px solid #d9f2ff;
+  border-radius: 50%; /* Circular container */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden; /* Prevent content overflow */
+  color: #333;
+  position: relative; /* Required for proper positioning of children */
+}
+
+/* Specific styling for text-based icons */
+.tool-text {
+  font-size: 14px;
+}
+
+/* Styling for image-based icons */
+.tool-icon img {
+  width: 70%; /* Adjust size relative to the container */
+  height: 70%; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent distortion */
+}
+
+
+/* WORK PAGE */
+
+.full-width-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10rem;
+}
+
+.full-width-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.half-width-container {
+  width: 50%; /* Set the width to half of the parent container */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10rem 0;
+}
+
+.half-width-container img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Remove any inline spacing caused by images */
+}
+
+.project-hero {
+  position: relative;
+  padding: 18rem 10rem 2rem 10rem; /* Top, Right, Bottom, Left */
+  background-color: var(--primary-bg-color);
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align the content */
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.hero2-img {
+  flex: 0 0 25%; /* Reduce the width to 25% */
+  text-align: left ;
+  margin-right: 1rem; /* Add spacing to the right of the image */
+  padding: 0;
+}
+
+.hero-content {
+  flex: 1; /* Take up the remaining space */
+  text-align: left;
 }
