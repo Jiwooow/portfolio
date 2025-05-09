@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiwoo Park</title>
+    <link rel="shortcut icon" href="img/JP.-2.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div class="jumping-dots">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a href="index.html#home" class="logo">Jiwoo<span>.</span>P</a>
+          <nav id="nav" class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#projects" class="nav-link active">Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-btn">
+              <img
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Navigation button"
+              />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Project Page Start! -->
+    <section id="project-hero" class="project-hero">
+      <div class="hero2-img">
+        <img src="img/works/project4/python.svg" alt="python icon">
+      </div>
+      <div class="container container-lg">
+        <div class="hero-row" data-aos="fade-zoom-in" data-aos-duration="2000">
+          <div class="hero-content">
+            <h1 class="hero-heading">Instagram AI post analysis</h1>
+            <span class="hero-heading-subtitle">AI / Automation</span>
+          </div>
+          
+          
+
+        </div>
+      </div>
+    </section>
+
+    <section id="work1-details" class="about">
+        <div class="container">
+            <div class="about-title">
+            <h2 class="title">About the Project</h2>
+            </div>
+
+            <div class="about-row">
+                <div class="about-content">
+                    <p class="about-descr">
+                      This project automates the process of downloading Instagram post thumbnails, analyzing them using AI-powered hashtag detection, and sorting them into categorized folders based on the content, utilizing Chromedrive with Python. It’s an ideal tool for content creators, social media managers, and marketers who need organized visuals for reference, reposting, or inspiration.
+                    </p>
+                    <br>
+                    <ul class="about-descr">
+                      <li>- Automated Instagram Thumbnail Download – Fetches post thumbnails from Instagram automatically.</li>
+                      <li>- AI-Based Hashtag Generation – Uses machine learning to analyze images and suggest relevant hashtags.</li>
+                      <li>- Automatic Sorting – Categorizes images into folders based on detected content themes.</li>
+                      <li>- Bulk Processing – Works with multiple Instagram posts efficiently.</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="about-content">
+                    
+                    <h5 class="about-title">Objective</h5>
+                    
+                        <ul class="about-descr">
+                          <li>- Create an automated tool that downloads Instagram post thumbnails and organizes them into categorized folders based on content.</li>
+                          <li>- Implement AI-powered image analysis to generate relevant hashtags for social media marketing and content organization.</li>
+                          <li>- Develop a bulk processing system that efficiently handles multiple Instagram posts with minimal user intervention.</li>
+                          <li>- Build a customizable framework that allows users to adapt the tool to their specific content management needs.</li>
+                        </ul>
+                </div>
+
+
+            <div class="about-content">
+              <h2 class="title">Progress</h2>
+                <p class="about-descr">
+                  The project was implemented in three stages:
+                </p>
+                <br>
+              <h5 class="about-title">1. Downloading Thumbnails</h5>
+              <p class="about-descr">
+                Using Selenium, the program automates the login to Instagram, searches for specific influencers, scrolls through their profiles, and downloads the thumbnails of their posts. Influencers creating contents such as motivation, business, system, productivity were included in this process. The downloaded images are saved in separate folders for each influencer.
+                <br>
+                Below is the automated process.
+              </p>
+              <br>
+              <div class="full-width-container">
+                <img src="img/works/project4/video-processed.MOV.gif" alt="automated instagram post tumbnail downloading" />
+              </div>
+            </div>
+              
+            <div class="about-content">
+              <h5 class="about-title">2. Renaming Images with AI-Generated Hashtags</h5>
+              <p class="about-descr">
+                A CLIP (Contrastive Language-Image Pretraining) model was used to analyze each image and generate relevant hashtags. These hashtags were based on predefined categories such as "FinanceMoney Tips," "Business Advice," and "Productivity Tips." The images were then renamed to include these hashtags, making them easier to identify and sort.
+              </p>
+              <br>
+              <div class="full-width-container">
+                <img src="img/works/project4/insta_rename.gif" alt="renaming with AI generated hashtag" />
+              </div>
+            </div>
+            
+
+            <div class="about-content">
+              <h5 class="about-title">3. Sorting Images into Categories</h5>
+              <p class="about-descr">
+                The renamed images were sorted into folders based on their hashtags. Each folder represents a category, such as "FinanceMoney_Tips" or "Personal_Development." This structured organization allows for quick access to specific types of content.
+              </p>
+            </div>
+            
+
+          </div>
+        
+        <div class="container">
+            <div class="about-title">
+                <h2 class="title">Outcomes</h2>
+            </div>
+
+            <div class="about-row">
+              <p class="about-descr">
+                The project successfully automated the entire process of downloading, renaming, and categorizing influencer thumbnails. The organized dataset now provides a clear overview of content trends in the business and personal growth niches
+              </p>
+            </div>
+
+            <div class="about-title">
+                <h2 class="title">Conclusion and Future Applications</h2>
+            </div>
+            
+            <div class="about-row">
+                <p class="about-descr">
+                  This project has proven to be a valuable tool for analyzing trends in specific domains by leveraging automation and AI. The categorized data can be further utilized in several ways:
+                </p>
+                <ul class="about-descr">
+                  <li>- <strong>Social Media Management:</strong> The sorted images can be used to quickly create posts or study content strategies for social media platforms.</li>
+                  <li>- <strong>Machine Learning Applications:</strong> The dataset can serve as training data for machine learning models to predict trends, analyze content performance, or even generate new content ideas.</li>
+                  <li>- <strong>Trend Analysis:</strong> Researchers and marketers can use the organized data to identify emerging trends in the business and self-development spaces.</li>
+                </ul>
+                <p class="about-descr">
+                  Check my github to figure out how to use this further!
+                  
+                </p>
+            </div>
+
+            <div class="about-row">
+              <a href="https://github.com/Jiwooow/post_analysis/tree/main" 
+                target=”_blank” class="btn" style="text-align: center">Go to My Github!
+              </a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="social-links-row footer-social">
+            <a href="https://github.com/Jiwooow" target=”_blank”>
+              <img
+                src="img/social_icons/github.svg"
+                alt="Link to GitHub account"
+              />
+            </a>
+
+            <a href="https://www.linkedin.com/in/jiwoo-park-7a1b5a28b" target=”_blank”>
+              <img
+                src="img/social_icons/linkedin.svg"
+                alt="Link to linkedin profile"
+              />
+            </a>
+
+            <!--<a href="#!">
+              <img
+                src="img/social_icons/instagram.svg"
+                alt="Link to instagram profile"
+            /></a>-->
+
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; Copyright John Sample 2024 | Designed by John Sample</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="goToTop" class="goToTop">
+      <a href="#project-hero">
+        <img src="img/icons/arrow_up.svg" alt="Back to top"
+      /></a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
