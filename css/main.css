@@ -785,6 +785,21 @@ h5 {
   display: block; /* Remove any inline spacing caused by images */
 }
 
+.image-container {
+  display: flex; /* Enables flexbox for responsive layout */
+  flex-wrap: wrap; /* Allows images to wrap when the screen is small */
+  gap: 10px; /* Adds space between images */
+  justify-content: center; /* Centers images horizontally */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures images scale within their containers */
+  height: auto; /* Maintains aspect ratio */
+  width: calc(50% - 10px); /* Each image takes up 1/3 of the row minus the gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for aesthetics */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
 .project-hero {
   position: relative;
   padding: 18rem 10rem 2rem 10rem; /* Top, Right, Bottom, Left */
